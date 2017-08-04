@@ -2,12 +2,14 @@ package com.example.spring.jpa;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.spring.domain.MonitHost;
 
-@Transactional
+@Repository("monitHostRepository")
 public interface MonitHostRepository extends PagingAndSortingRepository<MonitHost, Long>{
 	
 	Long deleteByMonitId(String monitId);

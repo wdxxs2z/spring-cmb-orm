@@ -24,8 +24,8 @@ public interface MonitProcessRepository extends PagingAndSortingRepository<Monit
 	 * ManyToOne processes -> monitHost 
 	 * 多对一的关系
 	 * */
-	@Query("select monitProcess from MonitProcess monitProcess join monitProcess.host host where host.monitId = ?1")
-	List<MonitProcess> findSelfMonitId(String monitId, Pageable pageable);
+	//@Query("select monitProcess from MonitProcess monitProcess join monitProcess.host host where host.monitId = ?1")
+	//List<MonitProcess> findSelfMonitId(String monitId, Pageable pageable);
 	
 	Long deleteByMonitId(String monitId);
 }

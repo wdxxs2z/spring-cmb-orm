@@ -13,8 +13,7 @@ import com.example.spring.domain.MonitHost;
 @Service("monitHostService")
 public class MonitHostService implements MonitHostServiceInte{
 	
-	@Autowired(required=false)
-	@Qualifier
+	@Autowired
 	private MonitHostDaoInte monitHostDao;
 	
 	public List<MonitHost> getAllMonitHosts() {

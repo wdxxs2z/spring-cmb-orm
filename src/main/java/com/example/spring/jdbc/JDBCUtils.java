@@ -40,7 +40,7 @@ public class JDBCUtils {
 	@Test
 	public void jdbcTest() throws SQLException {
 		Log log = LogFactory.getLog(JDBCUtils.class);		
-		Connection connection = JDBCUtils.getConnection("com.mysql.jdbc.Driver", "mysql", "127.0.0.1", "3306", "mydb", "root", "piv@tal");
+		Connection connection = JDBCUtils.getConnection("com.mysql.jdbc.Driver", "mysql", "127.0.0.1", "3306", "mydb", "root", "123456");
 		Statement st = connection.createStatement();
 		String sql = "select * from monit_hosts";
 		ResultSet rs = st.executeQuery(sql);

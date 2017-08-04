@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import com.example.spring.domain.MonitHost;
 import com.example.spring.service.MonitHostServiceInte;
 
-@Component
+//@Component
 public class XmlDatasource {
 	
 	@Autowired
